@@ -253,7 +253,7 @@ if(get_property("_amiWrapperStage").to_int()==8){
 	cli_execute("outfit 3 - Volcano Farming");
 	//running KOL-MineVolcano 
 int miningtime = my_adventures()-1;
-	cli_execute("try; minevolcano.ash " + miningtime);
+	cli_execute("minevolcano.ash " + miningtime);
 set_property("_amiWrapperDescription",'Ran mineVolcano');
 	set_property("_amiWrapperStage", 9);
 }
