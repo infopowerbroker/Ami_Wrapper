@@ -82,7 +82,7 @@ if((get_property("_amiWrapperStage").to_int()!=1) && (get_property("_amiWrapperS
 	
 }
 //checking to see if someone else already farmed with Ami today. I'm guessing 60 adv is safe, the nightcap won't exceed that
-if((get_property("_amiWrapperStage").to_int()!=1) && (get_property("_amiWrapperStage").to_int()<2) && (my_adventures()<90)){
+if((get_property("_amiWrapperStage").to_int()!=1) && (get_property("_amiWrapperStage").to_int()<2) && (my_inebriety().to_int()>inebriety_limit().to_int())){
 	chat_notify( "Someone else already ran adventures today", "red" );
 	chat_notify( "Try again after rollover", "red" );
 	set_property("_amiWrapperStage", 10);
