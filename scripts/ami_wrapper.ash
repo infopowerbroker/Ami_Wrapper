@@ -106,7 +106,7 @@ if(get_property("_amiWrapperStage").to_int()==1){
 		chat_private("cwbot" , "!fax");
 		//at this point, the operator can !fax in a fudge wasp in accordance with clan rules
 		//after the fax is obtained, re-run the program
-		exit;
+		abort("Error: You still need a photocopied monster. Ask CWBot for something fun!");
 		}
 	else{
 		cli_execute("outfit 1 - Free Fights");
